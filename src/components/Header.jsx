@@ -17,7 +17,7 @@ function Header() {
               <h5 className="mb-0 fw-bold">BETTER VET</h5>
               <p className="mb-0 text-muted">VETERINARY HOSPITAL</p>
             </div>
-          </div>
+        </div>
         </Col>
         <Col xs={12} md={6} className="text-md-end mt-3 mt-md-0">
           <p className="mb-1">
