@@ -28,7 +28,7 @@ const Services = () => {
 
   return (
     <Container className="my-5">
-      <h2 className="text-center mb-5 fw-bold">OUR SERVICES</h2>
+      <h2 className="text-left mb-5 fw-bold">OUR SERVICES</h2>
       <Row>
         {servicesData.map((service, index) => (
           <Col lg={3} md={6} key={index} className="mb-4">

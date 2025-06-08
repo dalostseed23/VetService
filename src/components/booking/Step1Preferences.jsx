@@ -11,14 +11,15 @@ const Step1Preferences = ({ nextStep, handleSelectChange, formData }) => {
       <Container className="py-4">
         <h5 className="fw-bold">Client status</h5>
         <div>
+          
           <Button
-            className={`client-status ${formData.clientStatus === 'New client' ? 'selected' : 'light'} me-2`}
+            className={`client-status ${formData.clientStatus === 'New client' ? 'selected' : 'light'} mr-2`}
             onClick={() => handleSelectChange('clientStatus', 'New client')}
           >
             New client
           </Button>
           <Button
-            className={`client-status ${formData.clientStatus === 'Returning client' ? 'selected' : 'light'} me-2`}
+            className={`client-status ${formData.clientStatus === 'Returning client' ? 'selected' : 'light'}`}
             onClick={() => handleSelectChange('clientStatus', 'Returning client')}
           >
             Returning client
@@ -34,6 +35,7 @@ const Step1Preferences = ({ nextStep, handleSelectChange, formData }) => {
             >
               <Card.Body className="text-center">
                 <FontAwesomeIcon icon={faDog} />
+                <p className='mt-4 mb-0'>Dog</p>
               </Card.Body>
             </Card>
           </Col>
@@ -44,6 +46,7 @@ const Step1Preferences = ({ nextStep, handleSelectChange, formData }) => {
             >
               <Card.Body className="text-center">
                 <FontAwesomeIcon icon={faCat} />
+                <p className='mt-4 mb-0'>Cat</p>
               </Card.Body>
             </Card>
           </Col>
@@ -61,8 +64,8 @@ const Step1Preferences = ({ nextStep, handleSelectChange, formData }) => {
           <option value="Vaccination">Vaccination</option>
           <option value="Dentistry">Dentistry</option>
         </Form.Select>
-
-        <div className="text-end mt-5">
+        
+        <div className="d-flex justify-content-end mt-5">
           <Button variant="dark" onClick={nextStep}>Next</Button>
         </div>
       </Container>
