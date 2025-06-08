@@ -1,0 +1,38 @@
+.about-section {
+  background: url('../assets/close-up-veterinary-doctor-taking-care-pet.jpg') no-repeat center center;
+  background-size: cover;
+  height: 500px; 
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  background-color: #8b0000;
+  color: white;
+  border:none !important;
+  outline:none !important;
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button:focus:active {
+  background-color: #a01a1a !important;
+  color: white;
+  border:none !important;
+  outline:none !important;
+}

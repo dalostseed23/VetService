@@ -1,0 +1,6 @@
+.navbar .dropdown-menu .dropdown-item:active,
+.navbar .dropdown-menu .dropdown-item.active {
+  background-color: #8b0000;
+  color: white;
+}
+
